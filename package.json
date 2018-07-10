@@ -1,6 +1,10 @@
 {
+<<<<<<< HEAD
   "repository": {
   },
+=======
+  "repository": {},
+>>>>>>> 7fb1d3d040b9d1e9a1bbd239c60ca1f4dd403c24
   "dependencies": {
     "babel-brunch": "~6.0.0",
     "brunch": "~2.1.3",

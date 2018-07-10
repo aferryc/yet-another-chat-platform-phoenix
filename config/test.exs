@@ -8,6 +8,7 @@ config :chat, Chat.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
+<<<<<<< HEAD
 
 # Configure your database
 config :chat, Chat.Repo,
@@ -17,3 +18,5 @@ config :chat, Chat.Repo,
   database: "chat_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+=======
+>>>>>>> 7fb1d3d040b9d1e9a1bbd239c60ca1f4dd403c24

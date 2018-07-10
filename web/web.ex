@@ -8,6 +8,7 @@ defmodule Chat.Web do
       use Chat.Web, :controller
       use Chat.Web, :view
 
+<<<<<<< HEAD
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
   on imports, uses and aliases.
@@ -39,10 +40,17 @@ defmodule Chat.Web do
     end
   end
 
+=======
+  Keep the definitions in this module short and clean,
+  mostly focused on imports, uses and aliases.
+  """
+
+>>>>>>> 7fb1d3d040b9d1e9a1bbd239c60ca1f4dd403c24
   def view do
     quote do
       use Phoenix.View, root: "web/templates"
 
+<<<<<<< HEAD
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_csrf_token: 0, get_flash: 2, view_module: 1]
 
@@ -69,6 +77,28 @@ defmodule Chat.Web do
       import Ecto
       import Ecto.Query, only: [from: 1, from: 2]
       import Chat.Gettext
+=======
+      # Import URL helpers from the router
+      import Chat.Router.Helpers
+
+      # Import all HTML functions (forms, tags, etc)
+      use Phoenix.HTML
+    end
+  end
+
+  def controller do
+    quote do
+      use Phoenix.Controller
+
+      # Import URL helpers from the router
+      import Chat.Router.Helpers
+    end
+  end
+
+  def model do
+    quote do
+      use Ecto.Model
+>>>>>>> 7fb1d3d040b9d1e9a1bbd239c60ca1f4dd403c24
     end
   end
 

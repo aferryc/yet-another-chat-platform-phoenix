@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 # App artifacts
 /_build
 /db
+=======
+# Mix artifacts
+/_build
+>>>>>>> 7fb1d3d040b9d1e9a1bbd239c60ca1f4dd403c24
 /deps
 /*.ez
 
@@ -10,6 +15,7 @@ erl_crash.dump
 # Static artifacts
 /node_modules
 
+<<<<<<< HEAD
 # Since we are building assets from web/static,
 # we ignore priv/static. You may want to comment
 # this depending on your deployment strategy.
@@ -32,3 +38,11 @@ erl_crash.dump
 *.ez
 *.beam
 /config/*.secret.exs
+=======
+# Since we are building js and css from web/static,
+# we ignore priv/static/{css,js}. You may want to
+# comment this depending on your deployment strategy.
+# /priv/static/css
+# /priv/static/js
+.DS_Store
+>>>>>>> 7fb1d3d040b9d1e9a1bbd239c60ca1f4dd403c24

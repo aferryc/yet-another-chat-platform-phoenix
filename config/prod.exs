@@ -6,6 +6,7 @@ use Mix.Config
 #
 # You should also configure the url host to something
 # meaningful, we use this information when generating URLs.
+<<<<<<< HEAD
 #
 # Finally, we also include the path to a manifest
 # containing the digested version of static files. This
@@ -18,10 +19,16 @@ config :chat, Chat.Endpoint,
 
 # Do not print debug messages in production
 config :logger, level: :info
+=======
+config :chat, Chat.Endpoint,
+  http: [port: {:system, "PORT"}],
+  url: [host: "example.com"]
+>>>>>>> 7fb1d3d040b9d1e9a1bbd239c60ca1f4dd403c24
 
 # ## SSL Support
 #
 # To get SSL working, you will need to add the `https` key
+<<<<<<< HEAD
 # to the previous section and set your `:url` port to 443:
 #
 #     config :chat, Chat.Endpoint,
@@ -42,6 +49,21 @@ config :logger, level: :info
 #       force_ssl: [hsts: true]
 #
 # Check `Plug.SSL` for all available options in `force_ssl`.
+=======
+# to the previous section:
+#
+#  config:chat, Chat.Endpoint,
+#    ...
+#    https: [port: 443,
+#            keyfile: System.get_env("SOME_APP_SSL_KEY_PATH"),
+#            certfile: System.get_env("SOME_APP_SSL_CERT_PATH")]
+#
+# Where those two env variables point to a file on
+# disk for the key and cert.
+
+# Do not print debug messages in production
+config :logger, level: :info
+>>>>>>> 7fb1d3d040b9d1e9a1bbd239c60ca1f4dd403c24
 
 # ## Using releases
 #
@@ -55,10 +77,13 @@ config :logger, level: :info
 #
 #     config :chat, Chat.Endpoint, server: true
 #
+<<<<<<< HEAD
 # You will also need to set the application root to `.` in order
 # for the new static assets to be served after a hot upgrade:
 #
 #     config :chat, Chat.Endpoint, root: "."
+=======
+>>>>>>> 7fb1d3d040b9d1e9a1bbd239c60ca1f4dd403c24
 
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.

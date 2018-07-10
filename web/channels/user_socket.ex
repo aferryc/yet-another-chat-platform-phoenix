@@ -1,6 +1,7 @@
 defmodule Chat.UserSocket do
   use Phoenix.Socket
 
+<<<<<<< HEAD
   ## Channels
   # This will match all topics that start with "room". room/1, room/2, etc.
   channel "rooms:*", Chat.RoomChannel
@@ -20,10 +21,18 @@ defmodule Chat.UserSocket do
   #
   # See `Phoenix.Token` documentation for examples in
   # performing token verification on connect.
+=======
+  channel "rooms:*", Chat.RoomChannel
+
+  transport :websocket, Phoenix.Transports.WebSocket
+  transport :longpoll, Phoenix.Transports.LongPoll
+
+>>>>>>> 7fb1d3d040b9d1e9a1bbd239c60ca1f4dd403c24
   def connect(_params, socket) do
     {:ok, socket}
   end
 
+<<<<<<< HEAD
   # Socket id's are topics that allow you to identify all sockets for a given user:
   #
   #     def id(socket), do: "users_socket:#{socket.assigns.user_id}"
@@ -34,5 +43,7 @@ defmodule Chat.UserSocket do
   #     Chat.Endpoint.broadcast("users_socket:#{user.id}", "disconnect", %{})
   #
   # Returning `nil` makes this socket anonymous.
+=======
+>>>>>>> 7fb1d3d040b9d1e9a1bbd239c60ca1f4dd403c24
   def id(_socket), do: nil
 end

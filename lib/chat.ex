@@ -9,8 +9,11 @@ defmodule Chat do
     children = [
       # Start the endpoint when the application starts
       supervisor(Chat.Endpoint, []),
+<<<<<<< HEAD
       # Start the Ecto repository
       supervisor(Chat.Repo, []),
+=======
+>>>>>>> 7fb1d3d040b9d1e9a1bbd239c60ca1f4dd403c24
       # Here you could define other workers and supervisors as children
       # worker(Chat.Worker, [arg1, arg2, arg3]),
     ]
